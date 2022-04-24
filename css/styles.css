@@ -1,0 +1,143 @@
+
+
+
+
+
+/* Векторные значки ч/з background
+.contact-nav .link::before{
+  display: inline-block;
+  align-items: center;
+  content: "";
+ background-position: center;
+ background-size: contain;
+  margin-right: 10px; */
+  
+  
+  /* background-color: #212121; */
+  
+/* } */
+/* .contact-nav .link.envelope::before{
+   height: 12px;
+  width: 16px;
+  background-image: url(../images/envelope.svg);
+}
+.contact-nav .link.smartphone::before{
+   height: 16px;
+  width: 10px;
+  background-image: url(../images/smartphone.svg);
+} */
+
+
+
+
+
+
+
+
+
+/* .features-item::before{
+  content: "";
+display: block;
+height: 120px;
+margin-bottom: 30px;
+background-color:var(--background-button-grey);
+
+
+}
+.features-item.icon-antenna::before{
+
+background-image: url(../images/icon-antenna.svg);
+background-repeat: no-repeat;
+background-position:center;
+}
+.features-item.icon-clock::before{
+
+background-image: url(../images/icon-clock.svg);
+background-repeat: no-repeat;
+background-position:center;
+}
+.features-item.icon-diagram::before{
+
+background-image: url(../images/icon-diagram.svg);
+background-repeat: no-repeat;
+background-position:center;
+}
+.features-item.icon-astronaut::before{
+
+background-image: url(../images/icon-astronaut.svg);
+background-repeat: no-repeat;
+background-position:center;
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* .team-follow .social::before{
+  
+  background-color: #2196f3;
+}
+.social.instagram-team::before{
+  background-image: url(../images/instagram.svg);
+}
+.social.twitter-team::before{
+  background-image: url(../images/twitter.svg);
+}
+.social.facebook-team::before{
+  background-image: url(../images/facebook.svg);
+}
+.social.linkedin-team::before{
+  background-image: url(../images/linkedin.svg);
+} */
+
+
+
+
+/*footer*/
+
+/* .social::before{
+  display: block;
+  content: "";
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+    
+} */
+
+
+/* .social.instagram::before{
+  background-image: url(../images/instagram.svg);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.social.twitter::before{
+  background-image: url(../images/twitter.svg);
+   background-color: rgba(255, 255, 255, 0.1);
+}
+.social.facebook::before{
+  background-image: url(../images/facebook.svg);
+   background-color: rgba(255, 255, 255, 0.1);
+}
+.social.linkedin::before{
+  background-image: url(../images/linkedin.svg);
+   background-color: rgba(255, 255, 255, 0.1);
+} */
+
+
+
+
+
+
+
+/*portfolio.html*/
+
+
+

@@ -1,0 +1,120 @@
+//footer
+
+
+.footer {
+    display: flex;
+}
+
+.adress {
+    color: var(--brand-white-color);
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+}
+.footer-nav {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--background-darkgrey);
+
+
+    .contact {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 1.71;
+        display: inline-block;
+        padding-top: 9px;
+        transition: color var(--animation);
+    }
+
+        &:focus,
+        &:hover {
+            color: var(--brand-blue-color);
+        }
+        .logo-link {
+            display: inline-block;
+            text-decoration: none;
+        
+            padding-bottom: 20px;
+            margin-right: 0;
+        }
+}
+
+.logo-page-studio-white {
+    color: var(--brand-white-color);
+
+    font-family: Raleway, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.icon-footer {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    fill: var(--background-page);
+}
+
+
+.block-follow {
+    margin-left: 70px;
+    margin-right: 93px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+
+.follow {
+    display: inline-block;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.14;
+
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--brand-white-color);
+    text-transform: uppercase;
+}
+
+.follow-order {
+    display: flex;
+    margin-top: 0;
+
+
+    .social {
+        margin-right: 10px;
+    }
+
+    .social:last-child {
+        margin-right: 0;
+    }
+
+    .link {
+
+        display: flex;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        transition: background-color var(--animation), cursor var(--animation);
+
+            &:hover,
+            &:focus {
+                background-color: var(--brand-blue-color);
+                cursor: pointer;
+            }
+}
+}
+
+
+
+
+
