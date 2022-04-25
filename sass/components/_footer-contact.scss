@@ -3,6 +3,18 @@
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
+    @media screen and(min-width:1200px){
+flex-wrap: nowrap;
+    }
+    
+}
+.block-contact{
+    @media screen and(max-width:1199px){
+    margin-right: auto;
+    margin-left: auto;
+            
+    }
 }
 
 .adress {
@@ -12,6 +24,11 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
+    
+    @media screen and(max-width:1199px){
+        text-align: center;
+        margin-bottom: 60px;
+    }
 
 }
 .footer-nav {
@@ -29,8 +46,11 @@
         font-size: 14px;
         line-height: 1.71;
         display: inline-block;
-        padding-top: 9px;
+        padding-top: 8px;
         transition: color var(--animation);
+        @media screen and(min-width:1200px){
+            padding-top: 9px;
+        }
     }
 
         &:focus,
@@ -43,6 +63,12 @@
         
             padding-bottom: 20px;
             margin-right: 0;
+            @media screen and(max-width:1199px){
+                margin-right: auto;
+                margin-left: auto;
+                display: block;
+                text-align: center;
+            }
         }
 }
 
@@ -52,8 +78,12 @@
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    @media screen and(min-width:1200px){
     font-size: 26px;
     line-height: 1.19;
+    }
 }
 .icon-footer {
     display: inline-block;
@@ -64,13 +94,33 @@
 
 
 .block-follow {
+    margin-left: 122px;
+    margin-right: 122px;
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and(max-width:767px){
+    justify-content: center;
+    margin-bottom: 60px;
+    }
+    @media screen and(min-width:768px) and (max-width:1190px){
+        display: inline-block;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    
+    @media screen and(min-width:1200px){
     margin-left: 70px;
     margin-right: 93px;
     padding-top: 12px;
     padding-bottom: 40px;
+    display: block;
+    
+}
 }
 
 .follow {
+    
     display: inline-block;
     font-style: normal;
     font-size: 14px;

@@ -5,54 +5,88 @@
 
 
 .container {
-    display: flex;
+    
     align-items: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and(min-width:768px) {
+        width: 768px;
+        display: flex;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and(min-width:1200px) {
+        width: 1200px;
+    display: flex;
     padding-top: 24px;
     padding-bottom: 25px;
+    }
 }
 }
 
 .logo {
     text-decoration: none;
 
-    margin-right: 93px;
+    @media screen and(min-width:768px){
+margin-right: 88px;
+    }
+@media screen and(min-width:1200px){
+margin-right: 93px;
+}
 
-
+    
 &__web {
-    color: var(--brand-blue-color);
+color: var(--brand-blue-color);
+font-family: Raleway,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 1.16;
 
-    font-family: Raleway, sans-serif;
-    font-style: normal;
-    font-weight: bold;
+    @media screen and(min-width:1200px){
+    
     font-size: 26px;
-    line-height: 1.19;
+    line-height: 1.19;}
 }
 
 &__studio {
+
     color: #000000;
 
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.16;
+    @media screen and(min-width:1200px){
+font-size: 26px;
+line-height: 1.19;
+    }
 }
 }
 
 .site-nav {
-    display: flex;
+    display: none;
 
+    @media screen and(min-width:768px){
+    display: flex;
+    }
 
 &__item {
+    @media screen and(min-width:768px){
     margin-right: 50px;
-
+    }
 
 &:last-child {
+    @media screen and(min-width:768px){
     margin-right: 0;
+    }
 }
 }
 
 &__link {
+    @media screen and(min-width:768px){
     color: var(--brand-black-color);
     text-decoration: none;
 
@@ -65,18 +99,21 @@
     padding-top: 32px;
     padding-bottom: 32px;
 
-    transition: color var(--animation);
+    transition: color var(--animation);}
 
 &:hover,
 &:focus {
-    color: var(--brand-blue-color);
+    @media screen and(min-width:768px){
+    color: var(--brand-blue-color);}
 }
 }
 &__link--current {
-    color: var(--brand-blue-color);
+    @media screen and(min-width:768px){
+    color: var(--brand-blue-color);}
 
 
 &::after {
+    @media screen and(min-width:768px){
     content: "";
     display: block;
     width: 100%;
@@ -88,68 +125,101 @@
     position: absolute;
     bottom: 0;
     left: 0;
-
+    }
 }
+
 }
 
 }
 .contact-nav {
+    display: none;
+
+    @media screen and(min-width:768px){
+    display: block;
+    margin-left: auto;
+    }
+@media screen and(min-width:1200px) {
     display: flex;
     margin-left: auto;
-
-
-
+}
 
 &__item {
-
+@media screen and(min-width:1200px){
     align-items: center;
-
+}
 }
 
 &__item--right {
-    margin-left: 50px;
 
+    @media screen and(min-width:1200px){
+    margin-left: 50px;
+    }
 }
 &__mail-icon {
+    @media screen and(min-width:768px){
+        
     display: inline-block;
 
     fill: currentColor;
+    width: 14px;
+    height: 10px;
+    margin-right: 8px;
+    transition: fill var(--animation), cursor var(--animation);
+    }
+
+@media screen and(min-width:1200px){
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    transition: fill var(--animation), cursor var(--animation);
-
+}
 
 }
 
 &__smartphone-icon {
+    @media screen and(min-width:768px){
+    width: 10px;
+    height: 14px;
+
+    margin-right: 8px;
+    fill: currentColor;
+}
+@media screen and(min-width:1200px){
     width: 10px;
     height: 16px;
-
+    
     margin-right: 10px;
-    fill: currentColor;
+}
 }
 
 &__link {
-    display: flex;
+    @media screen and(min-width:768px){
+    
     color: var(--brand-grey-color);
     text-decoration: none;
 
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
-    align-items: center;
-    justify-content: center;
+    
     transition: color var(--animation);
-
+    }
+    @media screen and(min-width:1200px){
+        display: flex;
+align-items: center;
+justify-content: center;
+font-size: 14px;
+line-height: 1.14;
+    }
 
 
 &:hover,
 &:focus {
+    @media screen and(min-width:768px){
     color: var(--brand-blue-color);
     cursor: pointer;
+}
 }
 }
 }

@@ -1,14 +1,8 @@
 // Чем мы занимаемся
 
-.title{
-    font-style: normal;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
+
 .activity {
+    
     display: flex;
 
 &__item {
@@ -18,10 +12,13 @@
     &:last-child {
         margin-right: 0;
     }
+
 }
 
 
 &__desc {
+    
+    
     position: absolute;
     left: 0;
     bottom: 0;
@@ -41,4 +38,10 @@
     text-transform: uppercase;
     color: var(--background-page);
 }
+}
+
+.section.activity{
+    @media screen and(max-width:1199px){
+        display: none;
+    }
 }

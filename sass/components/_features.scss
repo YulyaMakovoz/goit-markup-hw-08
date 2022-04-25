@@ -1,26 +1,46 @@
 //  Наши преимущества 
 .section.features {
+
+    @media screen and(min-width:1200px){
     padding-bottom: 0;
-   
+    }
 }
 
 .features-item {
-    margin-right: 30px;
+    max-width: 450px;
+    
+@media screen and(min-width:768px){
+max-width: 354px;
 
+}
+    @media screen and(min-width:1200px){
+    margin-right: 30px;
+    }
 
 &:last-child {
+    @media screen and(min-width:1200px){
     margin-right: 0;
+}
 }
 }
 
 .features-list {
+
     display: flex;
-    width: 270px;
+    max-width: 450px;
     height: 120px;
-    background-color: var(--background-button-grey);
-    margin-bottom: 30px;
     align-items: center;
     justify-content: center;
+    background-color: var(--background-button-grey);
+    margin-bottom: 30px;
+
+    @media screen and(min-width:768px){
+    max-width: 354px;
+     
+    @media screen and(min-width:1200px){
+        max-width: 270px;
+    }
+}
 }
 
 .features-icon {
@@ -29,23 +49,50 @@
 
 }
 
-.subtitle {
-    display: flex;
 
+.subtitle {
+    display: block;
+    @media screen and(min-width:768px){
+    display: flex;
+    flex-wrap: wrap;
+    width: 738px;
+    gap: 30px;
+
+    }
+    @media screen and(min-width:1200px){
+        flex-wrap: nowrap;
+        width: 1170px;
+    }
+    
     .features {
+        @media screen and(max-width:480px) {
+            text-align: center;
+            
+        }
         font-style: normal;
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
         margin-bottom: 10px;
         margin-top: 0;
+       
     }
+
     .features-desc {
+
         color: var(--brand-grey-color);
-    
+
         font-size: 14px;
         line-height: 1.71;
+        margin-top: 0;
+        margin-bottom: 30px;
+        @media screen and(min-width:768px){
         margin-bottom: 0;
         margin-top: 0;
+        }
+        &.features-desc-last{
+            margin-bottom: 0;
+        }
     }
 }
+
