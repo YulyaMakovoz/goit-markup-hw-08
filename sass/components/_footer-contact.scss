@@ -5,9 +5,13 @@
 
 .footer {
     @media screen and(min-width:768px){
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
+    // flex-wrap: wrap;
     width: 768px;
+    }
+    @media screen and(min-width:1200px){
+        display: flex;
+        width: 1200px;
     }
 
 }
@@ -15,11 +19,20 @@
     display: flex;
     @media screen and(max-width:1199px){
     justify-content: space-between;
+    margin-bottom: 60px;
+    }
+    @media screen and(max-width:767px){
+        display: block;
     }
 }
 .block-contact{
 @media screen and(max-width:1199px){
     margin-left: 61px;
+    text-align: center;
+}
+@media screen and(max-width:767px){
+margin-left: 0;
+margin-bottom: 60px;
 }
 }
 
@@ -72,8 +85,12 @@
     font-family: Raleway, sans-serif;
     font-style: normal;
     font-weight: bold;
+    font-size: 24px;
+    line-height: 1.16;
+    @media screen and(min-width:1200px){
     font-size: 26px;
     line-height: 1.19;
+    }
 }
 
 .icon-footer {
@@ -91,12 +108,21 @@
     padding-bottom: 40px;
     @media screen and(max-width:1199px){
         margin-right: 74px;
+        margin-left: 165px;
+        display: block;
+        text-align: center;
+    }
+    @media screen and(max-width:767px){
+margin-right: auto;
+margin-left: auto;
+padding-top: 0;
+padding-bottom: 0;
     }
 }
 
 
 .follow {
-    display: inline-block;
+    display: block;
     font-style: normal;
     font-size: 14px;
     line-height: 1.14;
@@ -110,6 +136,9 @@
 .follow-order {
     display: flex;
     margin-top: 0;
+    @media screen and(max-width:767px){
+justify-content: center;
+    }
 
 
     .social {

@@ -9,9 +9,9 @@
 
 .subscribe-form {
 
-    width: 358px;
+    width: 450px;
     height: 50px;
-    margin-right: 12px;
+    margin-bottom: 20px;
 
     font-weight: 400;
     font-size: 16px;
@@ -27,6 +27,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: transparent;
+    @media screen and(min-width:1200px){
+margin-right: 12px;
+margin-bottom: 0;
+width: 358px;
+    }
 }
 
 .subscribe-form[placeholder] {
@@ -45,16 +50,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
+    @media screen and(max-width:1199px){
+    margin-left: auto;
+    margin-right: auto;
+    }
 }
 
 .subscribe-box {
+    text-align: center;
+    @media screen and(min-width:1200px){
     padding-top: 12px;
     margin-left: auto;
+    text-align: left;
+    }
 
 }
 
 .subscribe-form-box {
+    @media screen and(min-width:1200px){
     display: flex;
+    }
 }
 
 // .icon-send {

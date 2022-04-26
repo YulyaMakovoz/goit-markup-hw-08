@@ -1,0 +1,118 @@
+// Мобильное меню
+.menu-btn{
+
+
+    width: 40px;
+    height: 40px;
+    padding:0;
+
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+
+    &__icon{
+width: 40px;
+height: 40px;
+
+        &-open{
+    opacity: 1;
+        }
+        &-close{
+            opacity: 0;
+        }
+    }
+    @media screen and(min-width:768px){
+        display: none;
+    }
+}
+
+.mobile-menu{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-page);
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 48px 40px;
+
+    @media screen and(min-width:768px){
+        display: none;
+    }
+   
+}
+
+
+
+
+.mobile-nav{
+margin-bottom: 302px;
+    &__item {
+        margin-bottom: 32px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__link {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.17;
+        letter-spacing: 0.02em;
+        color: var(--brand-black-color);
+    
+    
+    }
+}
+.mobile-contacts__tel{
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17px;
+    letter-spacing: 0.02em;
+    color: var(--brand-blue-color);
+    
+}
+.mobile-contacts__item-tel{
+margin-bottom: 32px;
+}
+.mobile-contacts__mail{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    color: var(--brand-grey-color);
+    
+}
+.mobile-contacts__item-mail{
+margin-bottom: 64px;
+}
+.mobile-socials{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item{
+        
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        &:not(:last-child){
+        margin-right: 10px;
+        }
+        &:last-child {
+            
+            border: none;
+        }
+        &:last-child .mobile-socials__link{
+            padding-right: 0;
+        }
+    }
+
+
+    &__link{
+        padding-right: 10px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+        color: var(--brand-blue-color);
+       
+       
+    }
+}
