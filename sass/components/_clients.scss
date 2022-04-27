@@ -27,9 +27,13 @@ flex-wrap: nowrap;
 
 .client-item {
     display: inline-block;
+    
+    
+    
+        
 height: 92px;
 width: 210px;
-    @media screen and(min-width:768px){
+        @media screen and(min-width:768px){
 width: 226px;
     }
     @media screen and(min-width:1200px){

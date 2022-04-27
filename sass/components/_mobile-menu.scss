@@ -86,6 +86,9 @@ margin-bottom: 302px;
     
     
     }
+    &__link:hover{
+        color: var(--brand-blue-color);
+    }
 }
 .mobile-contacts__tel{
     @media screen and(max-width:479px){
@@ -144,4 +147,7 @@ margin-bottom: 64px;
        
        
     }
+}
+.current {
+    color: var(--brand-blue-color);
 }

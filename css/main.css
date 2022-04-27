@@ -1069,6 +1069,12 @@ img {
   background-color: transparent;
 }
 
+@media screen and (max-width: 479px) {
+  .subscribe-form {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     margin-right: 12px;
@@ -1324,6 +1330,7 @@ img {
   pointer-events: initial;
   -webkit-transition: opacity var(--animation), visibility var(--animation);
   transition: opacity var(--animation), visibility var(--animation);
+  z-index: 11;
 }
 
 .backdrop.is-hidden {
@@ -1334,8 +1341,6 @@ img {
 
 .modal-wrapper {
   position: absolute;
-  width: 450px;
-  height: 609px;
   padding: 40px;
   background-color: var(--background-page);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1345,6 +1350,19 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-wrapper {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal-wrapper {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1668,6 +1686,10 @@ body {
   color: var(--brand-black-color);
 }
 
+.mobile-nav__link:hover {
+  color: var(--brand-blue-color);
+}
+
 .mobile-contacts__tel {
   font-weight: 500;
   font-size: 34px;
@@ -1731,6 +1753,10 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  color: var(--brand-blue-color);
+}
+
+.current {
   color: var(--brand-blue-color);
 }
 /*# sourceMappingURL=main.css.map */

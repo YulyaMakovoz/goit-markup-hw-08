@@ -11,6 +11,7 @@
     visibility: visible;
     pointer-events: initial;
     transition: opacity var(--animation), visibility var(--animation);
+    z-index: 11;
 
 
 
@@ -21,9 +22,10 @@
     }
 }
 .modal-wrapper {
+
     position: absolute;
-    width: 450px;
-    height: 609px;
+    
+    
     padding: 40px;
     background-color: var(--background-page);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -33,6 +35,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media screen and(max-width:479px){
+max-width: 450px
+    }
+    @media screen and(min-width:480px){
+width: 450px;
+height: 609px;
+    }
+
+
     @media screen and(min-width:1200px){
         width: 528px;
         height: 581px;
