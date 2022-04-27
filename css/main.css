@@ -1264,11 +1264,17 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-bottom: 30px;
-  width: 450px;
+  max-width: 450px;
   -webkit-transition: -webkit-box-shadow var(--animation);
   transition: -webkit-box-shadow var(--animation);
   transition: box-shadow var(--animation);
   transition: box-shadow var(--animation), -webkit-box-shadow var(--animation);
+}
+
+@media screen and (min-width: 480px) {
+  .project-item {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1330,6 +1336,12 @@ img {
   max-width: 450px;
 }
 
+@media screen and (min-width: 480px) {
+  .project-img {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .project-img {
     width: 354px;
@@ -1371,6 +1383,12 @@ img {
   transition: -webkit-transform var(--animation);
   transition: transform var(--animation);
   transition: transform var(--animation), -webkit-transform var(--animation);
+}
+
+@media screen and (max-width: 480px) {
+  .project-text {
+    font-size: 14px;
+  }
 }
 
 .backdrop {

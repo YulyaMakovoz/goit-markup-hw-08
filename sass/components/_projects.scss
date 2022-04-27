@@ -79,9 +79,13 @@ margin-top: calc(-1 * var(--card-set-gap));
     border: 1px solid #eeeeee;
     box-sizing: border-box;
     margin-bottom: 30px;
-    width: 450px;
+    max-width: 450px;
     
     transition: box-shadow var(--animation);
+@media screen and(min-width:480px){
+    width: 450px;
+}
+
     @media screen and(min-width:768px){
         flex-basis: calc((100% - 60px) / 2);
         margin-bottom: 0;
@@ -137,6 +141,10 @@ flex-basis: calc((100% - 90px) / 3);
     position: relative;
     overflow: hidden;
     max-width: 450px;
+    @media screen and(min-width:480px){
+        width: 450px;
+    }
+    
     @media screen and(min-width:768px){
 width: 354px;
     }
@@ -165,5 +173,8 @@ width: 354px;
     letter-spacing: 0.03em;
     transform: translateY(102%);
     transition: transform var(--animation);
+    @media screen and(max-width:480px){
+font-size: 14px;
+    }
 
 }
