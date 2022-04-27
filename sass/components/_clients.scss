@@ -28,13 +28,12 @@ flex-wrap: nowrap;
 .client-item {
     display: inline-block;
     
-    
-    
         
 height: 92px;
-width: 210px;
+width: calc((100% - 30px) / 2);
         @media screen and(min-width:768px){
 width: 226px;
+
     }
     @media screen and(min-width:1200px){
     width: 170px;
