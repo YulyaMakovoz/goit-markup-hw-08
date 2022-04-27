@@ -1327,6 +1327,19 @@ img {
 .project-img {
   position: relative;
   overflow: hidden;
+  max-width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .project-img {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-img {
+    width: 370px;
+  }
 }
 
 .project-text {
@@ -1655,10 +1668,6 @@ body {
   height: 40px;
 }
 
-.menu-btn__icon:hover {
-  fill: var(--brand-blue-color);
-}
-
 .menu-btn__icon-open {
   opacity: 1;
   -webkit-transition: opacity var(--animation), tranform var(--animation);
@@ -1683,6 +1692,10 @@ body {
 
 .menu-btn.is-active .menu-btn__icon-close {
   opacity: 1;
+}
+
+.menu-btn:hover .menu-btn__icon {
+  fill: var(--brand-blue-color);
 }
 
 .mobile-menu {

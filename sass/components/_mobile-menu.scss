@@ -23,9 +23,7 @@ position: relative;
     &__icon{
 width: 40px;
 height: 40px;
-    &:hover {
-        fill: var(--brand-blue-color);
-    }
+   
 
         &-open{
     opacity: 1;
@@ -47,6 +45,9 @@ opacity: 0;
     opacity: 1;
 }
 
+.menu-btn:hover .menu-btn__icon{
+    fill: var(--brand-blue-color);
+}
 .mobile-menu{
     width: 100vw;
     height: 100%;
