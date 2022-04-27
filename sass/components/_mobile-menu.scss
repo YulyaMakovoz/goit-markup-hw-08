@@ -1,14 +1,23 @@
 // Мобильное меню
+body{
+    height: 300vh;
+}
+.no-scroll{
+    overflow-y: hidden;
+}
 .menu-btn{
-
+position: relative;
 
     width: 40px;
     height: 40px;
     padding:0;
+    align-items: center;
+    justify-content: center;
 
     background-color: transparent;
     border: transparent;
     outline: transparent;
+    z-index: 10;
 
     &__icon{
 width: 40px;
@@ -16,29 +25,44 @@ height: 40px;
 
         &-open{
     opacity: 1;
+    transition: opacity var(--animation), tranform var(--animation);
         }
         &-close{
             opacity: 0;
+            transition: opacity var(--animation), tranform var(--animation);
         }
     }
     @media screen and(min-width:768px){
         display: none;
     }
 }
+.menu-btn.is-active .menu-btn__icon-open{
+opacity: 0;
+}
+.menu-btn.is-active .menu-btn__icon-close{
+    opacity: 1;
+}
 
 .mobile-menu{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-color: var(--background-page);
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     padding: 48px 40px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform var(--animation), opacity var(--animation);
 
     @media screen and(min-width:768px){
         display: none;
     }
    
+    &.is-open{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 
@@ -64,6 +88,9 @@ margin-bottom: 302px;
     }
 }
 .mobile-contacts__tel{
+    @media screen and(max-width:479px){
+font-size: 24px;
+    }
     font-weight: 500;
     font-size: 34px;
     line-height: 1.17px;
@@ -88,9 +115,11 @@ margin-bottom: 64px;
 .mobile-socials{
     display: flex;
     flex-wrap: wrap;
+    margin-top: -10px;
+    margin-right: -10px;
 
     &__item{
-        
+        margin-top: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         &:not(:last-child){
         margin-right: 10px;

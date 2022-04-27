@@ -1563,13 +1563,29 @@ img {
   border: transparent;
 }
 
+body {
+  height: 300vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .menu-btn {
+  position: relative;
   width: 40px;
   height: 40px;
   padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: transparent;
   border: transparent;
   outline: transparent;
+  z-index: 10;
 }
 
 .menu-btn__icon {
@@ -1579,10 +1595,14 @@ img {
 
 .menu-btn__icon-open {
   opacity: 1;
+  -webkit-transition: opacity var(--animation), tranform var(--animation);
+  transition: opacity var(--animation), tranform var(--animation);
 }
 
 .menu-btn__icon-close {
   opacity: 0;
+  -webkit-transition: opacity var(--animation), tranform var(--animation);
+  transition: opacity var(--animation), tranform var(--animation);
 }
 
 @media screen and (min-width: 768px) {
@@ -1591,20 +1611,41 @@ img {
   }
 }
 
+.menu-btn.is-active .menu-btn__icon-open {
+  opacity: 0;
+}
+
+.menu-btn.is-active .menu-btn__icon-close {
+  opacity: 1;
+}
+
 .mobile-menu {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--background-page);
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 48px 40px;
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: opacity var(--animation), -webkit-transform var(--animation);
+  transition: opacity var(--animation), -webkit-transform var(--animation);
+  transition: transform var(--animation), opacity var(--animation);
+  transition: transform var(--animation), opacity var(--animation), -webkit-transform var(--animation);
 }
 
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .mobile-nav {
@@ -1635,6 +1676,12 @@ img {
   color: var(--brand-blue-color);
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-contacts__tel {
+    font-size: 24px;
+  }
+}
+
 .mobile-contacts__item-tel {
   margin-bottom: 32px;
 }
@@ -1657,9 +1704,12 @@ img {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: -10px;
+  margin-right: -10px;
 }
 
 .mobile-socials__item {
+  margin-top: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 

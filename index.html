@@ -18,7 +18,7 @@
     <header class="header">
         <div class="header__container container">
             <a href="" class="logo"> <span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
-            <button class="menu-btn" type="button" aria-label="Кнопка открытия меню">
+            <button class="menu-btn" type="button" aria-label="Кнопка открытия меню" data-menu-button aria-expanded="false">
                 <svg class="menu-btn__icon" width="40" height="40">
                     <use class="menu-btn__icon-open" href="./images/icons.svg#icon-menu"></use>
                     <use class="menu-btn__icon-close" href="./images/icons.svg#icon-close"></use>
@@ -340,7 +340,7 @@
             </div>
         </div>
         <!--Мобильное меню-->
-        <div class="mobile-menu">
+        <div class="mobile-menu" data-menu>
             <nav class="mobile-nav">
                 <ul class="mobile-nav__list list">
                     <li class="mobile-nav__item"><a class="mobile-nav__link link" href="">Студия</a></li>
@@ -368,6 +368,7 @@
             </ul>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
         </body>
         
         </html>
