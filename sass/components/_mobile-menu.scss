@@ -59,6 +59,10 @@ opacity: 0;
     opacity: 0;
     transform: translateX(100%);
     transition: transform var(--animation), opacity var(--animation);
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
 
     @media screen and(min-width:768px){
         display: none;
@@ -74,7 +78,8 @@ opacity: 0;
 
 
 .mobile-nav{
-margin-bottom: 302px;
+
+
     &__item {
         margin-bottom: 32px;
 
